@@ -1,5 +1,5 @@
 import {controller} from './controller.js';
-import {object} from './app.js';
+import {object} from './index.js';
 export class model {
 
     constructor() {
@@ -17,8 +17,8 @@ export class model {
         let response =  await fetch('https://newsapi.org/v2/top-headlines?' +
             'country=us&' +
             'apiKey=d4e03df5989c4e4a998e4fb2fe632d48').then(response => response.json()).then(jsonres => this.set(jsonres)).catch(() => {
-                alert("Please reload the page. Unable to fetch data");
-            });    
+                 alert("Please reload the page. Unable to fetch data");
+             });    
        new controller(this);
     }
 

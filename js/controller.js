@@ -16,18 +16,19 @@ export class controller {
         this.model.removeLoader()
     }
     loadHeadlineFile = () => {
-        this.loadScript('/js/headline.js');
+        this.loadScript();
     }
-    loadScript = async (path) => {
-
+    loadScript =  () => {
+        
         let isLoaded = document.querySelectorAll("#headline-myModal");
         
         if (isLoaded.length > 0) {
             this.headline.init();
             return;
         }
-        let module = await import('/js/headline.js');
-        this.headline = new module.headline();
+         import('./headline.js').then(module => {
+            this.headline = new module.headline();
+        });
     }
 
 

@@ -1,3 +1,4 @@
+import errorimage from '../assets/errorimage.jpg';
 export class view {
     //Helper function to setup
     constructor(controller) {
@@ -87,7 +88,7 @@ export class view {
         parent_node.appendChild(inside_div);
 
         let img = this.createElement("img", "img", "");
-        img.src = (v.imageurlText == null) ? ("assets/errorimage.jpg") : (v.imageurlText);
+        img.src = (v.imageurlText == null) ? (errorimage) : (v.imageurlText);
         inside_div.appendChild(img);
 
         let h1 = this.createElement("h1", "title", "news_title");

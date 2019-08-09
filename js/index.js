@@ -1,4 +1,6 @@
 import {model} from './model.js';
+import '../static/style.css';
+require('es6-promise').polyfill();
 export class object {
 
     constructor() {
@@ -18,8 +20,8 @@ export class object {
     
 
     setDate = (date) => {
-        let newdate = this.formatDate(date);
-        this.dateText = newdate;
+        //let newdate = this.formatDate(date);
+        this.dateText = date;
     }
     
 
