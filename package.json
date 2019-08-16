@@ -1,0 +1,54 @@
+{
+  "name": "home-task-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open": "webpack-dev-server --inline --content-base ./dist",
+    "watch": "babel ./js/index.js --out-file compiled.js",
+    "build": "webpack --mode development",
+    "start": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohmpatelepam/Home-Task-5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohmpatelepam/Home-Task-5/issues"
+  },
+  "homepage": "https://github.com/ohmpatelepam/Home-Task-5#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.5.5",
+    "babel-plugin-dynamic-import-webpack": "^1.1.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "babel-register": "^6.26.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "acorn-dynamic-import": "^4.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "es6-promise": "^4.2.8",
+    "fetch-ie8": "^1.5.0",
+    "isomorphic-fetch": "^2.2.1",
+    "promise-polyfill": "8.1.3",
+    "regenerator": "^0.14.2",
+    "style-loader": "^1.0.0",
+    "whatwg-fetch": "^3.0.0"
+  }
+}
